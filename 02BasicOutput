@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	string school;
+	string department;
+	string name;
+	string adress;
+	
+	
+	cout<< "Enter your school\t:";
+	cin >> school;
+	cout<< "Enter your department\t:";
+	cin >> department;
+	cout<< "Enter  full name\t:";
+	cin >> name;
+	cout<< "Enter your adress\t:";
+	cin >> adress;
+	
+	
+	return 0;
+}
