@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+	double sugarPriceUsd, ricePricepound, sardinesPricepound, coffeepriceUSD,milkpriceUSD;
+	double sugarqty,riceqty,sardinesqty,coffeeqty,milkqty;
+	double USD =1;
+	double Php =56.00;
+	double pound =1;
+	double sugarcostPhp,ricecostPhp,sardinescostPhp,coffeecostPhp,milkcostPhp;
+	int totalCostPhp;
+	int UsdtoPhp=USD*Php;
+	int poundtoPhp=pound*Php;
+	
+	
+	
+	
+	cout<< "SugarPrice in USD\n";
+	cin>> sugarPriceUsd;
+	cout<< "ricePrice in pound\n";
+	cin>> ricePricepound;
+	cout<< "sardines price in pound\n";
+	cin>> sardinesPricepound;
+	cout<< "coffeeprice in USD\n";
+	cin>> coffeepriceUSD;
+	cout<< "milkprice USD\n";
+	cin>> milkpriceUSD;
+	
+	cout<< "sugarqty\t:\n";
+	cin>>sugarqty;
+	cout<< "riceqty\t:\n";
+    cin>> riceqty;
+	cout<< "sardinesqty\t:\n";
+	cin>> sardinesqty;
+	cout<< "coffeeqty\t:\n";
+	cin>> coffeeqty;
+	cout<< "milkqty\t:\n";
+	cin>> milkqty;
+	
+	UsdtoPhp= (USD*Php);
+	poundtoPhp = (pound*Php);
+
+	
+	totalCostPhp=sugarcostPhp+ricecostPhp+sardinescostPhp+coffeecostPhp+milkcostPhp;
+	
+	cout<<"totalcostinphp"<<totalCostPhp<<endl;
+	
+	
+	return 0;
+	
+}
