@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	int temperature;
+	
+	cout<< "Please input the temperature ";
+	cin >> temperature;
+	
+	if (temperature <=32){
+		cout<< "bring heavy jacket";
+	}
+	else if (temperature >= 32 && temperature <50){
+		cout<<"bring light jacket";
+	}
+	else if (temperature>=50){
+		cout<< "no need any jacket";
+	}
+	return 0;
+}
