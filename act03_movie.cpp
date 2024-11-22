@@ -8,13 +8,20 @@ int main () {
 	char time;
 	
 	
-	cout<< "Please input Age\n";
+	cout<< "Please input Age\n"; //age of the customer
 	cin >> age;
-	cout<< "please enter time [m=manatee,e=evening]";
-	cin>>time;
+	cout<< "please enter the  time[m=manatee,e=evening]:"; //time of arrival at the movie 
+	cin>> time;
 	
+	//ticket prize
+	if (time=='m'){
+		cout<<"the prize will be $7.50"<<endl;
+	}  
+    else if (time=='e'){
+		cout<< "the prize will be $10.50"<<endl;
+	}
 	
-	if (age<13){
+	if (age<13){                                               //condition on what category they can watch based on their age and if there are parents with them
 		
 		cout<< "are you with a parent [y=yes,n=no]";
 		cin>> answer;
@@ -22,33 +29,27 @@ int main () {
 	 if (answer=='y'){
 		cout<< "You Can watch G and Pg category"<<endl;
 	}
-	else if (answer=='n'){
+	 if (answer=='n'){
 		cout<<"you can only watch G category"<<endl;
 	}
-	if (age>13){
-		cout<< " you can watch G and Pg Category"<<endl;
-	}
-	if (age<16){
-		cout<< "are you with a parent? [y=yes,n=no]";
+	else if  (age>13 && age <16){
+		cout<< " You can watch G and Pg Category"<<endl;
+		cout<< "But are you together with a parent? [o=yes,p=no]";
 		cin>> answer;
 	}
-	if (answer=='y'){
-		cout<< "you can watch G, PG, R category"<<endl;
+	if (answer=='o'){
+		cout<< "Then you can watch G, PG, R category"<<endl;
 	}
-	else if (answer=='n'){
-		cout<< "you can only watch G, Pg Category"<<endl;
+	else if (answer=='p'){
+		cout<< "You can only watch G, Pg Category"<<endl;
 	}
 	if (age>=16){
 		cout<< "You Can watch G,PG,R category"<<endl;
-		
 	}
-	if (time=='m'){
-		cout<< "The prize will be $7.50 each"<<endl;
-	}
-	else if (time=='e'){
-		cout<< "the prize will be $10.50 each"<<endl;
-	}
-	
 	
 	return 0;
+}
+	
+	
+	
 	
