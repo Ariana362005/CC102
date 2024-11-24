@@ -13,12 +13,12 @@ int main () {
 	cout<< "please enter the  time[m=manatee,e=evening]:"; //time of arrival at the movie 
 	cin>> time;
 	
-	//ticket prize
+	//ticket price
 	if (time=='m'){
 		cout<<"the prize will be $7.50"<<endl;
 	}  
     else if (time=='e'){
-		cout<< "the prize will be $10.50"<<endl;
+		cout<< "the price will be $10.50"<<endl;
 	}
 	
 	if (age<13){                                               //condition on what category they can watch based on their age and if there are parents with them
