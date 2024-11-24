@@ -21,7 +21,7 @@ int main () {
 		cout<< "the price will be $10.50"<<endl;
 	}
 	
-	if (age<13){                                               //condition on what category they can watch based on their age and if there are parents with them
+	if (age<13){  //condition on what category they can watch based on their age and if there are parents with them
 		
 		cout<< "are you with a parent [y=yes,n=no]";
 		cin>> answer;
